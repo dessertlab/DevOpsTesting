@@ -1,0 +1,54 @@
+This application uses the library Apache Commons Configuration (https://commons.apache.org/configuration/) under the Apache 2.0 license, which can be obtained from http://www.apache.org/licenses/LICENSE-2.0.
+The library Apache Commons Configuration contains the following attribution notices:
+
+Apache Commons Configuration
+Copyright 2001-2018 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+============================================================================
+
+This application uses the library Apache Commons Collections (https://commons.apache.org/collections/) under the Apache 2.0 license, which can be obtained from http://www.apache.org/licenses/LICENSE-2.0. 
+The library Apache Commons Collections contains the following attribution notices:
+
+Apache Commons Collections
+Copyright 2001-2018 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+============================================================================
+
+This application uses the library Apache Commons CSV (https://commons.apache.org/csv/) under the Apache 2.0 license, which can be obtained from http://www.apache.org/licenses/LICENSE-2.0.
+The library Apache Commons CSV contains the following attribution notices:
+
+Apache Commons CSV
+Copyright 2005-2018 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+============================================================================
+
+This application uses the library Google Guava (https://github.com/google/guava) under the Apache 2.0 license, which can be obtained from http://www.apache.org/licenses/LICENSE-2.0.
+
+============================================================================
+
+This application uses the library OkHttp (https://square.github.io/okhttp/) under the Apache 2.0 license, which can be obtained from http://www.apache.org/licenses/LICENSE-2.0.
+
+============================================================================
+
+This application uses the library JSON-java (https://github.com/stleary/JSON-java):
+
+Copyright (c) 2002 JSON.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.

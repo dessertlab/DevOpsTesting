@@ -40,7 +40,7 @@ public class NumberOfFailures {
 			//Effettuo un ciclo sulle 20 ripetizioni dell'esperimento 1 (tecnica OT)
 			for(int j = 1; j<=20; j++){
 				//Ricavo il path del file nel quale sono salvati i dati
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "../../esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				//Creo una ResponseLogList a partire dal path
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				//Aggiungo all'array per la tecnica OT il numero di fallimenti (considerando tutti i fallimenti) contenuti nella ResponseLogList
@@ -50,7 +50,7 @@ public class NumberOfFailures {
 			//Effettuo un ciclo sulle 20 ripetizioni dell'esperimento 3 (tecnica WOT)
 			for(int j = 1; j<=20; j++){
 				//Ricavo il path del file nel quale sono salvati i dati
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment3_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "/../../esperimenti_discourse/experiment3_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				//Creo una ResponseLogList a partire dal path
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				//Aggiungo all'array per la tecnica WOT il numero di fallimenti (considerando tutti i fallimenti) contenuti nella ResponseLogList
@@ -87,7 +87,7 @@ public class NumberOfFailures {
 			//Effettuo un ciclo sulle 20 ripetizioni dell'esperimento 1 (tecnica OT)
 			for(int j = 1; j<=20; j++){
 				//Ricavo il path del file nel quale sono salvati i dati
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "../../esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				//Creo una ResponseLogList a partire dal path
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				//Aggiungo all'array per la tecnica OT il numero di fallimenti (considerando solo i fallimenti "critici") contenuti nella ResponseLogList
@@ -97,7 +97,7 @@ public class NumberOfFailures {
 			//Effettuo un ciclo sulle 20 ripetizioni dell'esperimento 2 (tecnica WOT)
 			for(int j = 1; j<=20; j++){
 				//Ricavo il path del file nel quale sono salvati i dati
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment2_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "../../esperimenti_discourse/experiment2_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				//Creo una ResponseLogList a partire dal path
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				//Aggiungo all'array per la tecnica WOT il numero di fallimenti (considerando solo i fallimenti "critici") contenuti nella ResponseLogList

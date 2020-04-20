@@ -235,13 +235,13 @@ public class Test {
 			nFailuresWOT = new ArrayList<Integer>();
 			
 			for(int j = 1; j<=20; j++){
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "../../esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				nFailuresOT.add(responseLogList.getTotalNumberOfFailures());
 			}
 			
 			for(int j = 1; j<=20; j++){
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment3_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "../../esperimenti_discourse/experiment3_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				nFailuresWOT.add(responseLogList.getTotalNumberOfFailures());
 			}
@@ -269,13 +269,13 @@ public class Test {
 			nCriticalFailuresWOT = new ArrayList<Integer>();
 			
 			for(int j = 1; j<=20; j++){
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "../../esperimenti_discourse/experiment1_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				nCriticalFailuresOT.add(responseLogList.getTotalNumberOfCriticalFailures());
 			}
 			
 			for(int j = 1; j<=20; j++){
-				String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment2_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
+				String path = "../../esperimenti_discourse/experiment2_repetition"+j+"/test_responses/test_response_log_list_cycle1_v"+versionsList.get(i)+".csv";
 				ResponseLogList responseLogList = appFactory.makeResponseLogList(path);
 				nCriticalFailuresWOT.add(responseLogList.getTotalNumberOfCriticalFailures());
 			}
@@ -293,51 +293,6 @@ public class Test {
 			
 		}
 		
-//		String path = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/esperimenti_discourse/experiment1_repetition1/test_responses/test_response_log_list_cycle1_v2.2.1.csv";
-
-		
-//		FrameMap frameMap = generateFramesForFirstStrategy(appFactory, path);
-		
-//		FrameMap frameMap = appFactory.makeFrameMap(path);
-		
-//		int NFrames = frameMap.size();
-//		
-//		ArrayList<Double> trueProbSelection = frameMap.getTrueProbSelectionDistribution();
-//		ArrayList<Double> trueProbFailure = frameMap.getTrueProbFailureDistribution();
-//		ArrayList<Double> trueProbCriticalFailure = frameMap.getTrueProbCriticalFailureDistribution();
-//		
-//		//Calcolo reliability vera (p_vera(i)*f_vera(i)) e conteggio f==1
-//		Double failProb = 0.0;
-//		int fCount = 0;
-//		for(int i = 0; i<NFrames; i++){
-//			failProb += trueProbSelection.get(i)*trueProbFailure.get(i);
-//			if(trueProbFailure.get(i).equals(new Double(1))){
-//				fCount++;
-//			}
-//		}	
-//		Double trueReliability = 1d - failProb;
-//		
-//		//Calcolo reliability critica vera (p_vera(i)*f_critica_vera(i))
-//		failProb = 0.0;
-//		int fCriticalCount = 0;
-//		for(int i = 0; i<NFrames; i++){
-//			failProb += trueProbSelection.get(i)*trueProbCriticalFailure.get(i);
-//			if(trueProbCriticalFailure.get(i).equals(new Double(1))){
-//				fCriticalCount++;
-//			}
-//		}	
-//		Double trueReliabilityForCriticalFailures = 1d - failProb;
-//		
-//		Locale currentLocale = Locale.ITALY;
-//		NumberFormat numberFormatter = NumberFormat.getNumberInstance(currentLocale);
-//		numberFormatter.setMinimumFractionDigits(16);
-//		
-//		System.out.println("|F_CRITICA_VERA == 1|: " + fCriticalCount);
-//		System.out.println("RELIABILITY CRITICA VERA: " + numberFormatter.format(trueReliabilityForCriticalFailures));
-//		System.out.println("|F_VERA == 1|: " + fCount);
-//		System.out.println("RELIABILITY VERA: " + numberFormatter.format(trueReliability));
-		
-//		frameMap.writeToCSVFile(frameMapFilePath);
 	}
 
 }

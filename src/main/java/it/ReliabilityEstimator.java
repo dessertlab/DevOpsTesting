@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi;
+package it;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import java.nio.file.StandardOpenOption;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.testingstrategies.TestingStrategy;
+import it.frameutils.ResponseLogList;
+import it.testingstrategies.TestingStrategy;
 
 public class ReliabilityEstimator {
 	

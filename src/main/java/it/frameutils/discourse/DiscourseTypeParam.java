@@ -1,6 +1,6 @@
-package it.alessandrochillemi.tesi.frameutils.discourse;
+package it.frameutils.discourse;
 
-import it.alessandrochillemi.tesi.frameutils.TypeParam;
+import it.frameutils.TypeParam;
 
 public enum DiscourseTypeParam implements TypeParam{
 	STRING{

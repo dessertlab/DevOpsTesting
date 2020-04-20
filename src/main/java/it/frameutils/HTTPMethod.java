@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi.frameutils;
+package it.frameutils;
 
 //Possibili metodi delle richieste HTTP
 public enum HTTPMethod {

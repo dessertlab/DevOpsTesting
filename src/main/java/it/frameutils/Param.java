@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi.frameutils;
+package it.frameutils;
 
 import java.io.Serializable;
 import java.util.ArrayList;

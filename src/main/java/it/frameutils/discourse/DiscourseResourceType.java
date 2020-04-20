@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi.frameutils.discourse;
+package it.frameutils.discourse;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,10 +11,10 @@ import org.json.JSONObject;
 
 import com.google.common.io.ByteStreams;
 
-import it.alessandrochillemi.tesi.APIRequest;
-import it.alessandrochillemi.tesi.frameutils.HTTPMethod;
-import it.alessandrochillemi.tesi.frameutils.Param;
-import it.alessandrochillemi.tesi.frameutils.ResourceType;
+import it.APIRequest;
+import it.frameutils.HTTPMethod;
+import it.frameutils.Param;
+import it.frameutils.ResourceType;
 import okhttp3.HttpUrl;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;

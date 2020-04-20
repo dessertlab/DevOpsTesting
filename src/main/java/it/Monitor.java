@@ -1,8 +1,8 @@
-package it.alessandrochillemi.tesi;
+package it;
 
 import java.util.ArrayList;
 
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
+import it.frameutils.ResponseLogList;
 
 public class Monitor{
 	

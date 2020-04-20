@@ -1,9 +1,9 @@
-package it.alessandrochillemi.tesi.testingstrategies;
+package it.testingstrategies;
 
 import java.util.ArrayList;
 
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
+import it.frameutils.FrameMap;
+import it.frameutils.ResponseLogList;
 
 //Strategia di test (da usare nel design pattern Strategy) che definisce il criterio di selezione dei test e l'algoritmo per il calcolo della reliability
 public abstract class TestingStrategy {

@@ -1,12 +1,12 @@
-package it.alessandrochillemi.tesi;
+package it;
 
-import it.alessandrochillemi.tesi.frameutils.ApplicationFactory;
-import it.alessandrochillemi.tesi.frameutils.Frame;
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.Param;
-import it.alessandrochillemi.tesi.frameutils.ResponseLog;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.testingstrategies.TestingStrategy;
+import it.frameutils.ApplicationFactory;
+import it.frameutils.Frame;
+import it.frameutils.FrameMap;
+import it.frameutils.Param;
+import it.frameutils.ResponseLog;
+import it.frameutils.ResponseLogList;
+import it.testingstrategies.TestingStrategy;
 import okhttp3.Response;
 
 //Esegue NREQUESTS scegliendo i frame secondo la distribuzione di probabilità di selezione vera

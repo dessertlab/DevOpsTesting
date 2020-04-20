@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi.frameutils.discourse;
+package it.frameutils.discourse;
 
 import java.math.BigInteger;
 import java.text.SimpleDateFormat;
@@ -10,7 +10,7 @@ import java.util.UUID;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
 
-import it.alessandrochillemi.tesi.frameutils.EquivalenceClass;
+import it.frameutils.EquivalenceClass;
 
 //Possibili classi di equivalenza per ogni parametro
 public enum DiscourseEquivalenceClass implements EquivalenceClass{

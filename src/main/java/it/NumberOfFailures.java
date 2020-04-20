@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi;
+package it;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,14 +9,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
-import it.alessandrochillemi.tesi.frameutils.ApplicationFactory;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.frameutils.discourse.DiscourseFactory;
+import it.frameutils.ApplicationFactory;
+import it.frameutils.ResponseLogList;
+import it.frameutils.discourse.DiscourseFactory;
 
 public class NumberOfFailures {
 
 	//Percorso nel quale si trova il file con le variabili di ambiente
-	public static String ENVIRONMENT_FILE_PATH = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/environment.properties";
+	public static String ENVIRONMENT_FILE_PATH = "../../";
 
 	public static void main(String[] args) {
 

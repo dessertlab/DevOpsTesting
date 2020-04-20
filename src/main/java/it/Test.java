@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi;
+package it;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,22 +13,22 @@ import java.util.Properties;
 
 import org.apache.commons.lang3.RandomUtils;
 
-import it.alessandrochillemi.tesi.frameutils.ApplicationFactory;
-import it.alessandrochillemi.tesi.frameutils.Frame;
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.Param;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.frameutils.discourse.DiscourseFactory;
-import it.alessandrochillemi.tesi.testingstrategies.FirstTestingStrategy;
-import it.alessandrochillemi.tesi.testingstrategies.SecondTestingStrategy;
-import it.alessandrochillemi.tesi.testingstrategies.TestingStrategy;
-import it.alessandrochillemi.tesi.utils.DoubleUtils;
-import it.alessandrochillemi.tesi.utils.TrueProbSelectionGenerator;
+import it.frameutils.ApplicationFactory;
+import it.frameutils.Frame;
+import it.frameutils.FrameMap;
+import it.frameutils.Param;
+import it.frameutils.ResponseLogList;
+import it.frameutils.discourse.DiscourseFactory;
+import it.testingstrategies.FirstTestingStrategy;
+import it.testingstrategies.SecondTestingStrategy;
+import it.testingstrategies.TestingStrategy;
+import it.utils.DoubleUtils;
+import it.utils.TrueProbSelectionGenerator;
 
 @SuppressWarnings("unused")
 public class Test {
 	//Percorso nel quale si trova il file con le variabili di ambiente
-	public static String ENVIRONMENT_FILE_PATH = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/environment.properties";
+	public static String ENVIRONMENT_FILE_PATH = "../../";
 
 	private static String frameMapFilePath;
 	private static String baseURL;

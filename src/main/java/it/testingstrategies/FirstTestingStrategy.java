@@ -1,11 +1,11 @@
-package it.alessandrochillemi.tesi.testingstrategies;
+package it.testingstrategies;
 
 import java.util.ArrayList;
 
 import org.apache.commons.lang3.RandomUtils;
 
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
+import it.frameutils.FrameMap;
+import it.frameutils.ResponseLogList;
 
 public class FirstTestingStrategy extends TestingStrategy {
 	

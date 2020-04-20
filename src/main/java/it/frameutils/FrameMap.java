@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi.frameutils;
+package it.frameutils;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -19,7 +19,7 @@ import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.lang3.EnumUtils;
 
-import it.alessandrochillemi.tesi.frameutils.Param.Position;
+import it.frameutils.Param.Position;
 
 public class FrameMap{
 	

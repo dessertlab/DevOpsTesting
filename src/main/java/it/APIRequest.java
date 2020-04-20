@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi;
+package it;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,9 +10,9 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import it.alessandrochillemi.tesi.frameutils.Frame;
-import it.alessandrochillemi.tesi.frameutils.HTTPMethod;
-import it.alessandrochillemi.tesi.frameutils.Param;
+import it.frameutils.Frame;
+import it.frameutils.HTTPMethod;
+import it.frameutils.Param;
 import okhttp3.HttpUrl;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;

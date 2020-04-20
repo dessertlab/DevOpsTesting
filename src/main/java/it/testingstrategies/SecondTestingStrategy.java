@@ -1,13 +1,13 @@
-package it.alessandrochillemi.tesi.testingstrategies;
+package it.testingstrategies;
 
 import java.util.ArrayList;
 
 import org.apache.commons.lang3.RandomUtils;
 
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.ResponseLog;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.utils.DoubleUtils;
+import it.frameutils.FrameMap;
+import it.frameutils.ResponseLog;
+import it.frameutils.ResponseLogList;
+import it.utils.DoubleUtils;
 
 public class SecondTestingStrategy extends TestingStrategy {
 

@@ -1,10 +1,10 @@
-package it.alessandrochillemi.tesi.utils;
+package it.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
+import it.frameutils.FrameMap;
 
 //Genera il profilo di selezione vero a partire da quello di testing in base a una certa percentuale di variazione scelta dall'utente
 public class TrueProbSelectionGenerator {

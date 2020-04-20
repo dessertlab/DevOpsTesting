@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi.discourseexperiment;
+package it.discourseexperiment;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,21 +9,21 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Properties;
 
-import it.alessandrochillemi.tesi.APIRequest;
-import it.alessandrochillemi.tesi.frameutils.ApplicationFactory;
-import it.alessandrochillemi.tesi.frameutils.Frame;
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.Param;
-import it.alessandrochillemi.tesi.frameutils.ResponseLog;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.frameutils.discourse.DiscourseFactory;
+import it.APIRequest;
+import it.frameutils.ApplicationFactory;
+import it.frameutils.Frame;
+import it.frameutils.FrameMap;
+import it.frameutils.Param;
+import it.frameutils.ResponseLog;
+import it.frameutils.ResponseLogList;
+import it.frameutils.discourse.DiscourseFactory;
 import okhttp3.Response;
 
 //Genera la distribuzione di probabilità di fallimento vera eseguendo N richieste per ogni frame e registrando la proporzione di esse che falliscono
 public class DiscourseTrueProbFailureRequestGenerator {
 
 	//Percorso nel quale si trova il file con le variabili di ambiente
-	public static String EXPERIMENT_DIRECTORY_PATH = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/";
+	public static String EXPERIMENT_DIRECTORY_PATH = "../../";
 
 	//Numero di richieste da eseguire per ogni frame
 	public static int NREQUESTS = 5;

@@ -1,17 +1,17 @@
-package it.alessandrochillemi.tesi.frameutils.discourse;
+package it.frameutils.discourse;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.EnumUtils;
 
-import it.alessandrochillemi.tesi.frameutils.ApplicationSpecifics;
-import it.alessandrochillemi.tesi.frameutils.EquivalenceClass;
-import it.alessandrochillemi.tesi.frameutils.Frame;
-import it.alessandrochillemi.tesi.frameutils.HTTPMethod;
-import it.alessandrochillemi.tesi.frameutils.Param;
-import it.alessandrochillemi.tesi.frameutils.ResourceType;
-import it.alessandrochillemi.tesi.frameutils.TypeParam;
+import it.frameutils.ApplicationSpecifics;
+import it.frameutils.EquivalenceClass;
+import it.frameutils.Frame;
+import it.frameutils.HTTPMethod;
+import it.frameutils.Param;
+import it.frameutils.ResourceType;
+import it.frameutils.TypeParam;
 
 public class DiscourseSpecifics extends ApplicationSpecifics{
 	

@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi;
+package it;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -12,10 +12,10 @@ import java.util.Locale;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 
-import it.alessandrochillemi.tesi.frameutils.ApplicationFactory;
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.frameutils.discourse.DiscourseFactory;
+import it.frameutils.ApplicationFactory;
+import it.frameutils.FrameMap;
+import it.frameutils.ResponseLogList;
+import it.frameutils.discourse.DiscourseFactory;
 
 //Classe per calcolare i tempi di risposta stimati e reali dell'applicazione
 public class PerformanceEstimator {
@@ -29,7 +29,7 @@ public class PerformanceEstimator {
 
 	public static void main(String[] args) {
 		
-		String experimentBaseDirectoryString = "/Users/alessandrochillemi/Desktop/Universita/Magistrale/Tesi/scripting/experiment1_repetition";
+		String experimentBaseDirectoryString = "../../";
 		String experimentDirectoryString = null;
 		
 		ArrayList<String> versionsList = new ArrayList<String>();

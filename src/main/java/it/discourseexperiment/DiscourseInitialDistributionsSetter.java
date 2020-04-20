@@ -1,16 +1,16 @@
-package it.alessandrochillemi.tesi.discourseexperiment;
+package it.discourseexperiment;
 
 import java.util.ArrayList;
 
 import org.apache.commons.lang3.RandomUtils;
 
-import it.alessandrochillemi.tesi.frameutils.ApplicationFactory;
-import it.alessandrochillemi.tesi.frameutils.Frame;
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.Param;
-import it.alessandrochillemi.tesi.frameutils.discourse.DiscourseFactory;
-import it.alessandrochillemi.tesi.utils.DoubleUtils;
-import it.alessandrochillemi.tesi.utils.TrueProbSelectionGenerator;
+import it.frameutils.ApplicationFactory;
+import it.frameutils.Frame;
+import it.frameutils.FrameMap;
+import it.frameutils.Param;
+import it.frameutils.discourse.DiscourseFactory;
+import it.utils.DoubleUtils;
+import it.utils.TrueProbSelectionGenerator;
 
 //Questa classe imposta i valori iniziali delle distribuzioni di probabilità così come specificato dall'utente
 public class DiscourseInitialDistributionsSetter {

@@ -1,4 +1,4 @@
-package it.alessandrochillemi.tesi.discourseexperiment;
+package it.discourseexperiment;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,16 +9,16 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Properties;
 
-import it.alessandrochillemi.tesi.Monitor;
-import it.alessandrochillemi.tesi.ReliabilityEstimator;
-import it.alessandrochillemi.tesi.TestGenerator;
-import it.alessandrochillemi.tesi.WorkloadGenerator;
-import it.alessandrochillemi.tesi.frameutils.ApplicationFactory;
-import it.alessandrochillemi.tesi.frameutils.FrameMap;
-import it.alessandrochillemi.tesi.frameutils.ResponseLogList;
-import it.alessandrochillemi.tesi.frameutils.discourse.DiscourseFactory;
-import it.alessandrochillemi.tesi.testingstrategies.FirstTestingStrategy;
-import it.alessandrochillemi.tesi.testingstrategies.TestingStrategy;
+import it.Monitor;
+import it.ReliabilityEstimator;
+import it.TestGenerator;
+import it.WorkloadGenerator;
+import it.frameutils.ApplicationFactory;
+import it.frameutils.FrameMap;
+import it.frameutils.ResponseLogList;
+import it.frameutils.discourse.DiscourseFactory;
+import it.testingstrategies.FirstTestingStrategy;
+import it.testingstrategies.TestingStrategy;
 
 public class DiscourseExperimentStarter {
 	

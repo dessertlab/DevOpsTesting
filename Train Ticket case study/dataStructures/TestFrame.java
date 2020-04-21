@@ -123,6 +123,42 @@ public class TestFrame{
 
 	}
 
+		// HTTP HEAD request
+		private void sendHead() throws Exception {
+			URL obj = new URL(url);
+			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+
+			try {
+				con.setRequestMethod("HEAD");
+
+				con.setRequestProperty("Content-Type", "application/json");
+				con.setRequestProperty("Authorization", "Bearer " + finalToken);
+
+				con.setConnectTimeout(time);
+				con.setReadTimeout((time));
+
+				responseCode = con.getResponseCode();
+
+				BufferedReader in = new BufferedReader(
+						new InputStreamReader(con.getInputStream()));
+				String inputLine;
+				response = new StringBuffer();
+
+				while ((inputLine = in.readLine()) != null) {
+					response.append(inputLine);
+				}
+				in.close();
+
+				//print result
+				//		System.out.println(response.toString());
+			} finally {
+				if (con != null) {
+					con.disconnect();
+				}
+			}
+
+		}
+
 	// HTTP POST request
 	private void sendPost() throws Exception {
 
@@ -232,8 +268,12 @@ public class TestFrame{
 				this.sendGet();
 			} else if(this.reqType.equals("POST")||this.reqType.equals("post")){
 				this.sendPost();
-			} else {
+			} else if(this.reqType.equals("HEAD")||this.reqType.equals("head")){
+				this.sendHead();
+			} else if(this.reqType.equals("PUT")||this.reqType.equals("put")){
 				this.sendPut();
+			} else {
+				return false;
 			}
 
 		} catch(java.net.SocketTimeoutException e){

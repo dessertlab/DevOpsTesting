@@ -104,8 +104,6 @@ public class TestFrame{
 			con.setReadTimeout((time));
 
 			responseCode = con.getResponseCode();
-			//		System.out.println("\nSending 'GET' request to URL : " + url);
-			//		System.out.println("Response Code : " + responseCode);
 
 			BufferedReader in = new BufferedReader(
 					new InputStreamReader(con.getInputStream()));
@@ -117,8 +115,6 @@ public class TestFrame{
 			}
 			in.close();
 
-			//print result
-			//		System.out.println(response.toString());
 		} finally {
 			if (con != null) {
 				con.disconnect();
@@ -147,9 +143,7 @@ public class TestFrame{
 			wr.write(this.selPayload);
 			wr.flush();
 
-			responseCode = con.getResponseCode();
-			//		System.out.println("\nSending 'POST' request to URL : " + url);
-			//		System.out.println("Response Code : " + responseCode);
+			responseCode = con.getResponseCode()
 
 			if(responseCode < 300){
 				BufferedReader in = new BufferedReader(
@@ -162,8 +156,6 @@ public class TestFrame{
 				}
 				in.close();
 
-				//print result
-				//		System.out.println(response.toString());
 			}
 		} finally {
 			if (con != null) {
@@ -223,33 +215,10 @@ public class TestFrame{
 		testCases.add(tc);
 	}
 
-	/****************Experimental Version*********************/	
-	//	private static Scanner scan = new Scanner(System.in);
-
-	public double expExtractAndExecuteTestCase(){
-		int failedTC = 0;
-
-		for(int i=0; i<30; i++){
-			if(extractAndExecuteTestCase())
-				failedTC++;
-		}
-
-		System.out.println("There are "+failedTC+" on 30 Test Cases executed");
-
-		//		System.out.println("Press ENTER to continue");
-		//		scan.nextLine();
-
-		return failedTC/(double)30;
-	}
-	/**************************************/
 
 	//	Metodo per l'esecuzione di un caso di Test estratto dal Test Frame
 	public boolean extractAndExecuteTestCase(){
-		//		return this.extractAndExecuteTestCaseExperimenationSimulation();
-		////		return this.extractAndExecuteTestCaseDummy();
-		////		System.out.println("[DEBUG] "+name+" "+this.payload);
-		//	}
-		//	public boolean extractAndExecuteTestCasebackup(){
+
 		url = this.name;
 		selPayload = this.payload;
 
@@ -257,43 +226,25 @@ public class TestFrame{
 			this.selectTC();
 		}
 
-//		System.out.println(this.tfID+") "+this.reqType+" "+this.url);
-		//		System.out.println("Payload: "+this.selPayload);
-
 		try {
 
 			if(this.reqType.equals("GET")||this.reqType.equals("get")){
 				this.sendGet();
 			} else if(this.reqType.equals("POST")||this.reqType.equals("post")){
 				this.sendPost();
-			} else{
+			} else {
 				this.sendPut();
 			}
 
 		} catch(java.net.SocketTimeoutException e){
-//			Toolkit.getDefaultToolkit().beep();
 
-			//			System.out.println("Press ENTER to continue");
-			//			scan.nextLine();
 
 			return false;
 			//return true;
 		} catch (Exception e) {
 			if(responseCode == 0){
-				//				Toolkit.getDefaultToolkit().beep();
-				//
-				//				System.out.println("[0] Press ENTER to continue");
-				//				scan.nextLine();
 				return false;
 			} else if(responseCode >= 500){
-				//				/**********************/
-				//				try {
-				//					Thread.sleep(1000);
-				//				} catch (InterruptedException e1) {
-				//					// TODO Auto-generated catch block
-				//					e1.printStackTrace();
-				//				}
-				//				/***********************/
 				return true;
 			} else{
 				return false;
@@ -301,14 +252,6 @@ public class TestFrame{
 		}
 
 		if(responseCode >= 500){
-			/**********************/
-			//			try {
-			//				Thread.sleep(1000);
-			//			} catch (InterruptedException e1) {
-			//				// TODO Auto-generated catch block
-			//				e1.printStackTrace();
-			//			}
-			/***********************/
 			return true;
 		} else{
 			return false;
@@ -316,25 +259,6 @@ public class TestFrame{
 
 	}
 
-
-
-	//	Metodo di prova usato in simulazione
-	//	private boolean extractAndExecuteTestCaseDummy(){
-	//		double rand = Math.random();
-	//		if (rand <= this.failureProb && this.failureProb!=0){
-	//			return true;
-	//		} else{
-	//			return false;
-	//		}
-	//	}
-
-	public boolean extractAndExecuteTestCaseExperimenationSimulation(){
-		if (this.failureProb > 0.5){
-			return true;
-		} else{
-			return false;
-		}
-	}
 
 	//	Metodo necessario per costruire l'URL da inviare
 	private void selectTC(){
@@ -353,6 +277,21 @@ public class TestFrame{
 			case "greater":  sel = String.valueOf(ThreadLocalRandom.current().nextInt(Integer.parseInt(this.ic.get(i).min)+1, Integer.parseInt(this.ic.get(i).min)+500));
 			break;
 
+			case "range_n":  sel = String.valueOf(ThreadLocalRandom.current().nextDouble(Double.parseDouble(this.ic.get(i).min), Double.parseDouble(this.ic.get(i).max)));
+			break;
+
+			case "lower_n":  sel = String.valueOf(ThreadLocalRandom.current().nextDouble(Double.parseDouble(this.ic.get(i).min)-500, Double.parseDouble(this.ic.get(i).min)-1));
+			break;
+
+			case "greater_n":  sel = String.valueOf(ThreadLocalRandom.current().nextDouble(Double.parseDouble(this.ic.get(i).min)+1, Double.parseDouble(this.ic.get(i).min)+500));
+			break;
+			
+			case "true":  sel = "true";
+			break;
+			
+			case "false":  sel = "false";
+			break;
+			
 			case "different":  sel = randomNotInt();
 			break;
 
